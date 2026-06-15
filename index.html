@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sistema simples para avaliação do Perfil Empreendedor, sem armazenamento de dados pessoais." />
+  <title>Sistema de Perfil Empreendedor | Universidade Rovuma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-card">
+      <div class="hero-topline">
+        <span class="badge">Feira de Empreendedorismo</span>
+        <span class="privacy-note">Sem recolha de dados pessoais</span>
+      </div>
+
+      <header class="institution-header">
+        <div class="logo-mark" aria-hidden="true">UR</div>
+        <div>
+          <p class="university">Universidade Rovuma</p>
+          <p class="faculty">Faculdade de Ciências Económicas e Empresariais</p>
+        </div>
+      </header>
+
+      <div class="hero-content">
+        <div>
+          <h1>Sistema de Perfil Empreendedor</h1>
+          <p class="lead">
+            Responda a 10 questões rápidas e descubra a sua percentagem de perfil empreendedor.
+            O resultado é calculado automaticamente no seu navegador.
+          </p>
+        </div>
+        <div class="summary-box">
+          <strong>Como funciona?</strong>
+          <span>10 questões</span>
+          <span>5 níveis de resposta</span>
+          <span>Resultado imediato em %</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-card" id="questionario">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Questionário</p>
+          <h2>Avaliação do Perfil Empreendedor</h2>
+        </div>
+        <p class="hint">Seleccione uma opção em cada questão.</p>
+      </div>
+
+      <form id="perfilForm">
+        <div id="questionsContainer" class="questions-container"></div>
+
+        <div class="actions">
+          <button type="submit" class="primary-btn">Ver Resultado</button>
+          <button type="button" id="limparBtn" class="secondary-btn">Limpar Respostas</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="result-card hidden" id="resultado" aria-live="polite">
+      <div class="result-layout">
+        <div class="score-circle" id="scoreCircle">
+          <span id="percentagemResultado">0%</span>
+        </div>
+        <div class="result-text">
+          <p class="eyebrow">Resultado</p>
+          <h2 id="classificacaoResultado">Perfil empreendedor</h2>
+          <p id="descricaoResultado"></p>
+          <div class="recommendation">
+            <strong>Recomendação:</strong>
+            <span id="recomendacaoResultado"></span>
+          </div>
+          <div class="result-actions">
+            <button type="button" id="novoTesteBtn" class="primary-btn">Fazer Novo Teste</button>
+            <button type="button" id="imprimirBtn" class="secondary-btn">Imprimir Resultado</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Desenvolvido para fins de sensibilização e orientação empreendedora.</p>
+      <p>Os dados não são guardados, enviados ou partilhados.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
