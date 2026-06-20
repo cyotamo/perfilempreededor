@@ -71,24 +71,38 @@ body {
 .institution-header {
   display: flex;
   align-items: center;
-  gap: 14px;
   padding-bottom: 22px;
   border-bottom: 1px solid var(--border);
 }
 
-.university,
-.faculty {
-  margin: 0;
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.university {
-  font-size: 1.35rem;
-  font-weight: 900;
+.header-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 700;
   color: var(--primary);
 }
 
-.faculty {
+.header-subtitle {
   margin-top: 4px;
+  font-size: 14px;
   color: var(--muted);
   font-weight: 700;
 }
@@ -364,9 +378,6 @@ button:hover {
     flex-direction: column;
   }
 
-  .institution-header {
-    align-items: flex-start;
-  }
 }
 
 @media print {
