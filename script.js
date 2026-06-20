@@ -123,7 +123,7 @@ function calcularResultado(event) {
   recomendacaoResultado.textContent = resultadoFinal.recomendacao;
 
   const graus = Math.round((percentagem / 100) * 360);
-  scoreCircle.style.background = `conic-gradient(var(--primary) ${graus}deg, #e8efec ${graus}deg)`;
+  scoreCircle.style.background = `conic-gradient(var(--primary) ${graus}deg, #e6f1fa ${graus}deg)`;
 
   resultado.classList.remove("hidden");
   resultado.scrollIntoView({ behavior: "smooth", block: "start" });
